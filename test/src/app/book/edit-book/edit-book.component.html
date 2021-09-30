@@ -1,0 +1,35 @@
+<div class="container">
+  <h3>Edit book</h3><br>
+
+  <form [formGroup]="bookForm">
+    <table>
+      <tr>
+        <td><label>id: </label></td>
+        <td><input type="text" formControlName="id" readonly></td>
+      </tr>
+      <tr>
+        <td><label>tên: </label></td>
+        <td><input type="text" formControlName="title"></td>
+      </tr>
+      <tr>
+        <td><label>tác giả: </label></td>
+        <td><input type="text" formControlName="author"></td>
+      </tr>
+      <tr>
+        <td><label>Mô tả: </label></td>
+        <td>
+          <textarea type="text" formControlName="description" rows="4" cols="50"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-success" (click)="submitEdit()" routerLink="">Edit</button></td>
+        <td><button class="btn btn-danger" routerLink="">Cancel</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+
+
+
+

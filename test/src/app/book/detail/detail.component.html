@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Detail</h1>
+  <a routerLink="" class="btn btn-dark">back</a>
+
+   <table [formGroup]="bookForm">
+     <tr>
+       <td>tên: </td>
+       <td><textarea type="text" formControlName="title" rows="1" cols="50" readonly></textarea></td>
+     </tr>
+     <tr>
+       <td>tác giả: </td>
+       <td><textarea formControlName="author" rows="1" cols="50" readonly></textarea></td>
+     </tr>
+     <tr>
+       <td>mô tả: </td>
+       <td><textarea type="text" formControlName="description" rows="6" cols="50" readonly></textarea></td>
+     </tr>
+   </table>
+</div>
