@@ -14,10 +14,10 @@ export class CreateBookComponent implements OnInit {
 
   ngOnInit(){
     this.bookFrom = new FormGroup({
-      id: new FormControl(0, Validators.min(1)),
-      title: new FormControl('', Validators.min(1)),
-      author: new FormControl('', Validators.min(1)),
-      description: new FormControl('', Validators.min(3)),
+      id: new FormControl(0, Validators.required),
+      title: new FormControl('', Validators.required),
+      author: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
       status: new FormControl(true),
     })
   }

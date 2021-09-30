@@ -18,10 +18,10 @@
         <td>
           <textarea type="text" formControlName="description" rows="4" cols="50"></textarea>
         </td>
-        <td><p *ngIf="!bookFrom.get('description')?.valid" style="color: red"> > 3</p></td>
+        <td><p *ngIf="!bookFrom.get('description')?.valid" style="color: red">không thể để trống</p></td>
       </tr>
       <tr>
-        <td><button class="btn btn-success" (click)="create()"  routerLink="">Create</button></td>
+        <td><button class="btn btn-success" (click)="create()" [disabled]="bookFrom.invalid">Create</button></td>
         <td><button class="btn btn-danger" routerLink="">Cancel</button></td>
       </tr>
     </table>
